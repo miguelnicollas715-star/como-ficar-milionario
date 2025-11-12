@@ -1,91 +1,117 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saiba Mais — Como Ficar Milionário com a Internet</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-      color: white;
-      margin: 0;
-      padding: 0;
-      text-align: center;
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Saiba Mais — Como Ficar Milionário com a Internet</title>  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);  
+      color: white;  
+      margin: 0;  
+      padding: 0;  
+      text-align: center;  
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }  
+  
+    body.fade-in {
+      opacity: 1;
     }
 
-    header {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 25px;
-      font-size: 24px;
-      font-weight: bold;
-    }
+    header {  
+      background: rgba(0, 0, 0, 0.3);  
+      padding: 25px;  
+      font-size: 24px;  
+      font-weight: bold;  
+    }  
+  
+    .container {  
+      max-width: 800px;  
+      margin: 40px auto;  
+      background: rgba(255, 255, 255, 0.1);  
+      border-radius: 15px;  
+      padding: 25px;  
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);  
+    }  
+  
+    img {  
+      width: 100%;  
+      border-radius: 15px;  
+      margin-top: 15px;  
+    }  
+  
+    h2 {  
+      color: #ffdd57;  
+    }  
+  
+    p {  
+      line-height: 1.6;  
+      font-size: 18px;  
+    }  
+  
+    a.button {  
+      display: inline-block;  
+      margin-top: 20px;  
+      background: #ffdd57;  
+      color: black;  
+      text-decoration: none;  
+      padding: 12px 25px;  
+      border-radius: 8px;  
+      font-weight: bold;  
+      transition: 0.3s;  
+    }  
+  
+    a.button:hover {  
+      background: white;  
+    }  
+  
+    footer {  
+      margin-top: 40px;  
+      background: rgba(0,0,0,0.3);  
+      padding: 10px;  
+      font-size: 14px;  
+    }  
+  </style>  
+</head>  
+<body>  
+  
+  <header>💰 Como Ficar Milionário com a Internet</header>  
+  
+  <div class="container">  
+    <h2>O Poder da Educação Financeira Digital</h2>  
+    <p>Com a Internet, qualquer pessoa pode aprender a investir, empreender e gerar renda de forma inteligente. O segredo está em usar a tecnologia a seu favor, com foco e estratégia.</p>  
+  
+    <img src="https://images.unsplash.com/photo-1601597111021-4b8e6b69a7e1?auto=format&fit=crop&w=800&q=80" alt="Dinheiro e tecnologia">  
+  
+    <h2>Nosso Objetivo</h2>  
+    <p>Esta startup foi criada para ajudar jovens e adultos a controlar suas finanças e alcançar liberdade financeira com o auxílio da inteligência artificial. Com o nosso assistente digital, você poderá planejar metas, receber dicas de investimento e organizar seus gastos.</p>  
+  
+    <a class="button" href="index.html">⬅ Voltar à página inicial</a>  
+  </div>  
+  
+  <footer>© 2025 Nicollas Miguel — Projeto Como Ficar Milionário</footer>  
 
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 25px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    }
+  <!-- 🌟 Script da transição suave -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("fade-in");
+    });
 
-    img {
-      width: 100%;
-      border-radius: 15px;
-      margin-top: 15px;
-    }
-
-    h2 {
-      color: #ffdd57;
-    }
-
-    p {
-      line-height: 1.6;
-      font-size: 18px;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      background: #ffdd57;
-      color: black;
-      text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    a.button:hover {
-      background: white;
-    }
-
-    footer {
-      margin-top: 40px;
-      background: rgba(0,0,0,0.3);
-      padding: 10px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>💰 Como Ficar Milionário com a Internet</header>
-
-  <div class="container">
-    <h2>O Poder da Educação Financeira Digital</h2>
-    <p>Com a Internet, qualquer pessoa pode aprender a investir, empreender e gerar renda de forma inteligente. O segredo está em usar a tecnologia a seu favor, com foco e estratégia.</p>
-
-    <img src="https://images.unsplash.com/photo-1601597111021-4b8e6b69a7e1?auto=format&fit=crop&w=800&q=80" alt="Dinheiro e tecnologia">
-
-    <h2>Nosso Objetivo</h2>
-    <p>Esta startup foi criada para ajudar jovens e adultos a controlar suas finanças e alcançar liberdade financeira com o auxílio da inteligência artificial. Com o nosso assistente digital, você poderá planejar metas, receber dicas de investimento e organizar seus gastos.</p>
-
-    <a class="button" href="index.html">⬅ Voltar à página inicial</a>
-  </div>
-
-  <footer>© 2025 Nicollas Miguel — Projeto Como Ficar Milionário</footer>
-
-</body>
+    const links = document.querySelectorAll("a");
+    links.forEach(link => {
+      link.addEventListener("click", (e) => {
+        const href = link.getAttribute("href");
+        if (href && href.endsWith(".html")) {
+          e.preventDefault();
+          document.body.classList.remove("fade-in");
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    });
+  </script>
+</body>  
 </html>
