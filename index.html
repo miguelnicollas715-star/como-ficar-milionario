@@ -1,77 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Como ficar milionário com a Internet</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #2c3e50, #4ca1af);
-      color: white;
       margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #0d47a1, #1976d2, #ff8f00);
+      background-size: 300% 300%;
+      animation: bgMove 12s ease infinite;
+      transition: background 1s ease;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
-      background: rgba(0, 0, 0, 0.3);
       text-align: center;
-      padding: 30px 20px;
+      padding: 60px 20px 20px;
+      overflow: hidden;
     }
 
     h1 {
-      margin: 0;
-      font-size: 2em;
+      font-size: 2.5em;
+      animation: floatTitle 3s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
     }
 
-    main {
+    @keyframes floatTitle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 10px #ff8f00; }
+      100% { text-shadow: 0 0 20px #ffd54f; }
+    }
+
+    section {
       max-width: 800px;
-      margin: 40px auto;
+      margin: 30px auto;
       background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.02);
     }
 
     h2 {
-      color: #ffe082;
+      color: #ffca28;
+      margin-bottom: 10px;
     }
 
     p {
       line-height: 1.6;
-      margin-bottom: 15px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, #ff8f00, #ffca28);
+      padding: 12px 20px;
+      border-radius: 30px;
+      margin-top: 15px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    a:hover {
+      transform: scale(1.1);
+      background: linear-gradient(90deg, #ffa726, #ffb300);
     }
 
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 25px;
       font-size: 0.9em;
-      background: rgba(0,0,0,0.2);
+      color: #fff59d;
+      background: rgba(0, 0, 0, 0.3);
     }
-
-    .botao {
-      display: inline-block;
-
-      </style>
+  </style>
 </head>
 <body>
   <header>
-    <h1>Como ficar milionário com a Internet</h1>
+    <h1>💡 Como ficar milionário com a Internet</h1>
   </header>
 
-  <main>
+  <section>
     <h2>Sobre a oportunidade</h2>
     <p>Olá, meu nome é Nicollas Miguel e tenho 13 anos! 💡</p>
     <p>Eu apresento uma estratégia de como ficar milionário com a Internet.</p>
-    
-    <h2>Ideia de startup</h2>
-    <p>Entender e gerenciar as finanças pessoais pode ser uma grande fonte de frustração para muitas pessoas. Minha ideia é criar uma plataforma que ajude jovens e adultos a organizar suas finanças, aprender sobre investimentos e encontrar oportunidades online para aumentar sua renda.</p>
+  </section>
 
-   
-  </main><a class="botao" href="saiba-mais.html">Saiba mais 💡</a>
+  <section>
+    <h2>Ideia de startup</h2>
+    <p>
+      Entender e gerenciar as finanças pessoais pode ser uma grande fonte de frustração para muitas pessoas.
+      Minha ideia é criar uma plataforma que ajude jovens e adultos a organizar suas finanças, aprender sobre investimentos
+      e encontrar oportunidades online para aumentar sua renda.
+    </p>
+    <a href="saiba-mais.html">Saiba mais 💡</a>
+  </section>
 
   <footer>
-    <p>© 2025 Nicollas Miguel — Projeto Como Ficar Milionário</p>
+    © 2025 Nicollas Miguel — Projeto Como Ficar Milionário
   </footer>
 </body>
 </html>
